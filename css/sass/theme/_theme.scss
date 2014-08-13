@@ -1,0 +1,32 @@
+.introduction {
+  @include flexbox;
+  -webkit-align-items:center;
+  align-items:center;
+  font-size:22px;
+  padding:4rem 0;
+  .headshot {
+    margin-right:2rem;
+    min-width:15rem;
+  }
+}
+
+.mast {
+  position:relative;
+  figcaption {
+    position: absolute;
+    left: .5rem;
+    bottom: 3rem;
+    color:white;
+    background:$color-black;
+    background:rgba(0,0,0,.5);
+    font-size: 1.6rem;
+    padding: 1rem;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.about-photo {
+  margin-left:2rem;
+}

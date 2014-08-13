@@ -1,0 +1,19 @@
+{% capture content %}
+
+<h1>{{ title }}</h1>
+{% if pages %}
+  <nav role="subnavigation">
+    <ul>
+      {% for subpage in pages %}
+      <li><a href="{{subpage.url}}">{{subpage.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
+
+{{ body }}
+
+{% endcapture %}
+
+{% include 'layouts/default' %}
+

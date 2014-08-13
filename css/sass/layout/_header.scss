@@ -1,0 +1,48 @@
+header[role="banner"] {
+  padding-bottom:2rem;
+  background:rgba($color-black, .95);
+  width:100%;
+  position:fixed;
+  top:0;
+  text-align:center;
+  clear:left;
+  .header-inner {
+    @include flexbox;
+    -webkit-align-items:center;
+    align-items:center;
+  }
+}
+
+.olympic-bars {
+  list-style:none;
+  margin:0;
+  padding:0;
+  padding-bottom:2.7rem;
+}
+
+.olympic-bars-bar {
+  float:left;
+  width:20%;
+  height: .7rem;
+  background:blue;
+}
+
+.olympic-bars-bar:nth-child(1) {
+  background: $olympic-blue;
+}
+
+.olympic-bars-bar:nth-child(2) {
+  background: $olympic-yellow;
+}
+
+.olympic-bars-bar:nth-child(3) {
+  background: $color-black;
+}
+
+.olympic-bars-bar:nth-child(4) {
+  background: $olympic-green;
+}
+
+.olympic-bars-bar:nth-child(5) {
+  background: $olympic-red;
+}

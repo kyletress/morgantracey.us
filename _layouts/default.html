@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }} - {{ current.title }}</title>
+  <meta name="description" content="{{site.meta.description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="/css/master.css">
+  {% include 'includes/typekit' %}
+</head>
+
+<body class="{% if parent %}{{ parent.title }}{% else %}{{ slug }}{% endif %}">
+  <header role="banner">
+    <ul class="olympic-bars">
+      <li class="olympic-bars-bar"></li>
+      <li class="olympic-bars-bar"></li>
+      <li class="olympic-bars-bar"></li>
+      <li class="olympic-bars-bar"></li>
+      <li class="olympic-bars-bar"></li>
+    </ul>
+    <nav class="navigation">
+      <ul>
+        <li><a href="/" class="brand">Morgan Tracey</a></li>
+        {% for page in site.pages %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+        <li><a class="link-twitter" href="http://www.twitter.com/morgangtracey">@morgangtracey</a></li>
+      </ul>
+    </nav>
+  </header> 
+  
+  {% if home? %}
+      <section class="introduction container">
+      <img src="/assets/headshot-small.jpg" width="150" class="headshot img-rounded img-bordered">
+      {{ body }}
+    </section>
+
+    {% if assets %}
+    <figure class="mast container">
+      <img src="{{assets.first.url}}" alt="assets.first.meta.caption" class="img-bordered">
+      <figcaption>{{ site.meta.tagline | markdown }}</figcaption>
+    </figure>
+    {% endif %}
+  {% endif %}  
+  <div class="container">
+    {{ content }}
+    <footer role="site-footer">
+      {% include 'includes/social' %}
+      <p class="copyright">{{site.meta.copyright | markdown }}</p>
+    </footer>
+  </div><!--end container-->
+  {% include 'includes/analytics' %}
+</body>
+</html>

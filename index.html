@@ -1,0 +1,21 @@
+{% capture content %}
+
+<h3>Recent Posts</h3>
+
+{% for post in site.pages.blog.posts | limit: 10 | offset: 1 %}
+<article>
+  {% if post.meta.type == "aside" %}
+    <time>{{ post.date | date: "%B %d, %Y" }}</time>
+    {{post.body}}
+  {% else %}
+  <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+  <time>{{ post.date | date: "%B %d, %Y" }}</time>
+  {{ post.body }}
+  {% endif %}
+</article>
+{% endfor %}
+
+{% endcapture %}
+
+{% include 'layouts/default' %}
+
