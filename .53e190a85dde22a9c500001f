@@ -1,5 +1,5 @@
 ---
-time: 1408219478
+time: 1427773181
 inventory:
   /home/index.html:
     md5: 8facd2fc2856ff6af68ba85f9e233907
@@ -11,8 +11,8 @@ inventory:
     md5: 94e7041e9a113994f16a1060676da260
     time: 1407968774
   /blog/index.html:
-    md5: bf102c97d28ba1b1451ce084ff567516
-    time: 1407967690
+    md5: 6ee2a8f72b5054034459c5695b95d727
+    time: 1427773178
   /blog/from-russia-with-love/index.html:
     md5: 0cfef61221d9c99afc9665f4328a23ba
     time: 1407967690
@@ -128,8 +128,8 @@ inventory:
     md5: 0b0bc5eefe2f84079dec67a0dd4ef722
     time: 1407967691
   /skeleton/index.html:
-    md5: 7614ae3f70d58f199f9a4941f60f012a
-    time: 1407967691
+    md5: 0f4a4da19cdbb81ff135464e9f525ddc
+    time: 1427773180
   /sponsorship/index.html:
     md5: 16b1beb23170f0088e07654495dae393
     time: 1407967692
@@ -155,11 +155,11 @@ inventory:
     md5: 003ae6faafbc4a1e65f814c9b6e6b26d
     time: 1407966488
   /sitemap.xml:
-    md5: 634a9cdabdfde93af6fbe0ba74dd71cf
-    time: 1407966488
+    md5: f6f618c29be687e368c9c03b8ff92dfa
+    time: 1427773181
   /feed.xml:
-    md5: cd131b2024d6419432d1a2ecfadba6b6
-    time: 1408219477
+    md5: 9c08d2b89928a6d841903052d3b42621
+    time: 1427773181
   /assets/headshot.jpg:
     md5: 5237b3ead6af4c91c8f2d6ef93ba6f4a
     time: 1407966489
