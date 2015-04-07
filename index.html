@@ -1,14 +1,15 @@
 {% capture content %}
 
-<h3>Recent Posts</h3>
+<h3>Recent</h3>
 
+<ul>
 {% for post in site.pages.blog.posts %}
-<article>
-  <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+<li>
+  <a href="{{post.url}}">{{post.title}}</a>
   <time>{{ post.date | date: "%B %d, %Y" }}</time>
-  {{ post.body }}
-</article>
+</li>
 {% endfor %}
+</ul>
 
 {% endcapture %}
 
